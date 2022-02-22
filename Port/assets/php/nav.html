@@ -1,0 +1,45 @@
+<div id="preloader"></div>
+<style>
+    #preloader{
+        background:#15111c url(images/preloader.gif) no-repeat center center;
+        background-size: 25%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+    }
+
+</style>
+
+<script>
+    var loader = document.getElementById("preloader")
+
+    window.addEventListener("load", function(){
+        loader.style.display = "none";
+    })
+</script>
+
+<nav>
+    <a href="index.html">
+    <img class="navlogo" src="images/logo.png">
+    </a>
+    <input type="checkbox" id="burgerbutton" />
+    <label for="burgerbutton" class="burgerimage" title="Navigation">&#x2630;</label>
+    <ul>
+        <li>
+            <a href="index.html" title="Link">Home</a>
+        </li>
+        <li>
+            <a href="#aboutme" title="Link">About</a>
+        </li>
+        <li>
+            <a href="projects.html" title="Link">Projects</a>
+        </li>
+        <li>
+            <a href="pdf/glResume.pdf" title="Link">Resume</a>
+        </li>
+        <li>
+            <a href="socials.html" title="Link">Socials</a>
+        </li>
+    </ul>
+        </nav>
