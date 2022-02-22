@@ -1,0 +1,239 @@
+/* html{
+    overflow: hidden;
+} */
+
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.background {
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* margin: auto; */
+    height: 100%;
+    margin: 0%;
+    
+    
+    /* margin: 0;
+    padding: 0; */
+}
+
+
+
+
+/* Example Opening Animation */
+
+@keyframes open {
+    from {
+        right: -100vw;
+    }
+    to {
+        right: 0;
+    }
+}
+
+
+/*hide check box*/
+
+#burgerbutton {
+    display: none;
+}
+
+/* You probably want to replace the text part of the label element with a background via css in productive use */
+
+.burgerimage {
+    /* position: absolute; */
+    position: fixed;
+    top: 25px;
+    right: 70px;
+    font-size: 40pt;
+    cursor: pointer;
+    transition: transform 0.8s ease;
+    color: white;
+    border:#383838;
+}
+
+/*menu style*/
+
+nav {
+    background-color: transparent;
+    display: block;
+    height: 130px;
+    /* position: fixed; DONT DO THAT*/
+    display: block;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    display: none;
+    position: fixed;
+    top: 120px;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    list-style: none;
+    right:0;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    
+}
+
+nav ul li {
+    display: block;
+    width: auto;
+   
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    display: block;
+    padding: 15px;
+    height: 75px;
+    /* transition: background 0.5s ease; */
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+    /* line-height: 2; */
+}
+
+nav ul li a:hover {
+    /* background-color: transparent; */
+    color:black;
+}
+
+/* display menu when check box is ticked */
+
+#burgerbutton:checked~ul {
+    display: block;
+    animation-name: open;
+}
+
+/* rotating menu */
+
+#burgerbutton:checked~.burgerimage {
+    transform: rotate(90deg);
+}
+
+/*logo*/
+.navlogo {
+    width: 65pt;
+    height: auto;
+    top: 35px;
+    position: fixed;
+    left: 70px;
+   
+}
+
+
+
+.header{
+    text-align: center;
+    display:block;
+    padding-bottom: 150px;
+    padding-top: 3%;
+    color:white;
+}
+
+.name{
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 13px;
+}
+
+.header, .name, .explore{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.explore {
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: white;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+  }
+  
+
+/* .top {
+    background-image: url('../photo/city.jpg');
+    background-repeat: no-repeat;
+    height: 95%;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.heading {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+}
+*/
+
+
+#aboutme{
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    margin: 0%;
+}
+
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+} 
+
+
+.row {
+    padding-top: 10%;
+    margin: 0 -5px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
