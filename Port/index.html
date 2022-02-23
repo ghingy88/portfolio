@@ -1,0 +1,113 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/144a75d94b.js" crossorigin="anonymous"></script>
+        <!-- <meta charset="UTF-8"> -->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <title>Home</title>
+        <link rel="icon" href="images/logo purple.png">
+        <link rel="stylesheet" type="text/css" media="all" href="css/css.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="js/js.js"></script>
+        <script src="https://kit.fontawesome.com/a777aec5b8.js" crossorigin="anonymous"></script>
+    </head>
+  <body>
+<!-- PRELOADER -->
+<div id="preloader"></div>
+<script>
+var loader = document.getElementById("preloader")
+window.addEventListener("load", function(){
+loader.style.display = "none";
+})
+</script>
+<!-- END PRELOADER -->
+<div class="background">
+
+    <!-- COMMON NAV -->
+    <div id="nav-placeholder"></div>
+    <!-- END COMMON NAV -->
+    
+    <div class="header">
+        <h1 class="name">
+            <b>Ghingmo Luk</b>
+        </h1>
+        <h2 class="course">
+            Information Systems Student
+        </h2>
+    </div>
+<div>
+        <a href="#aboutme" class="explore">Explore</a>
+        </div>
+        </div>  
+
+    <!-- <div id="aboutme">
+        <h2 style="margin:0%; padding-top: 5px;">About me</h2>
+        <p>currently a university student studying a Bachelor of Business Information Systems (Applied) at RMIT, Melbourne, Australia</p>
+        <p>One day I want to be like Jordan Lamia </p>
+        <h2>Technical skills skills</h2>
+        <h3>Languages</h3>
+        <ul>
+            <li>mySQL, Access Database</li>
+            <li>HTML,PHP,JS,CSS</li>
+            <li>Python, Java</li>
+        </ul>
+        <h3>Tools</h3>
+        <ul>
+            <li>mySQL</li>
+            <li>Visual studio, ATOM</li>
+            <li>Visual Basic</li>
+            <li>puTTY</li>
+            <li>Ubuntu</li>
+        </ul>
+
+
+    <p style="margin: 0; padding-bottom: 5px;">
+        You can check out my <a href="socials.html" style="text-decoration: none;">socials</a> or check out my <a href="pdf/glResume.pdf" style="text-decoration: none;">resume</a>
+    </p>
+    </div> -->
+
+<!-- SLIDER -->
+
+<div id="aboutme">
+<img class ="images" src="images/slide1.jpg" style="width:100%">
+<img class ="images" src="images/slide1.jpg" style="width:100%">
+<img class ="images" src="images/slide1.jpg" style="width:100%">
+
+<button class="leftButton" onclick="plusDivs(-1)">&#10094;</button>
+<button class="rightButton" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("images");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+</script>
+<!-- COMMON FOOTER -->
+<div id="footer-placeholder"></div>
+<!-- END COMMON FOOTER -->
+
+
+    </body>
+</html>
